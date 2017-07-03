@@ -10,22 +10,35 @@
 	<link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600|Raleway:200,300,400,600&amp;subset=latin-ext" rel="stylesheet">
 
         <link rel="stylesheet" href="{{asset 'css/normalize.css'}}">
         <link rel="stylesheet" href="{{asset 'css/skeleton.css'}}">
-    </head>
+        <link rel="stylesheet" href="{{asset 'css/home.css'}}">
 
+    </head>
     <body>
+
         <div class="container" style="margin-top: 30px;">
+
             <div class="row">
                 <p style="text-align:center;">
                     <img src="{{asset 'img/duraki-logo.png'}}" alt="duraki logo"/>
                 </p>
             </div>
 
+	    <div class="row">
+                <div class="one-sixth column" style="margin-top: 10%; margin-left: 0%";>
+                    <h3><a href="/">blog</a> / <a href="{{url}}">{{title}}</a></h3>
+                </div>
+	    </div>
+
+	    <hr style="display: block; text-align: left; width: 100%;" />
+
             <div class="row">
-                <div class="six columns" style="margin-top: 15%;">
-                    <h2 style="font-family: Roboto;">{{title}}</h2>
+                <div class="six columns" style="margin-top: 0%;">
+
+
                     <div class="tags">
                     {{#each tags}}
                     <code class="tags-code">{{this}}</code>
@@ -36,5 +49,11 @@
 
                 </div>
             </div>
+
+	    <hr style="display: block; text-align: left; width: 100%;" />
+
+	    <small style="color:rgba(68, 63, 63, 0.42)">this project, script or post is written by @durakih (c) 2017</small>
+
         </div>
     </body>
+</html>
