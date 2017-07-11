@@ -68,7 +68,7 @@ a:hover {
 }
 
 ul {
-    list-style: disc inside important!;
+    list-style: disc inside;
 }
 
 blockquote {
